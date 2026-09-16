@@ -1,0 +1,54 @@
+{
+  "pages": [
+    {
+      "id": "page-ja",
+      "name": "日本語版（日本→台湾）"
+    },
+    {
+      "id": "page-zh",
+      "name": "繁體中文版（台湾→日本）"
+    }
+  ],
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "title": "日本語版 PC",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 5800,
+      "page": "page-ja"
+    },
+    {
+      "file": "Mobile.dc.html",
+      "title": "日本語版 スマホ",
+      "x": 1560,
+      "y": 0,
+      "w": 390,
+      "h": 6200,
+      "page": "page-ja"
+    },
+    {
+      "file": "ZhDesktop.dc.html",
+      "title": "繁體中文版 PC",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 5200,
+      "page": "page-zh"
+    },
+    {
+      "file": "ZhMobile.dc.html",
+      "title": "繁體中文版 スマホ",
+      "x": 1560,
+      "y": 0,
+      "w": 390,
+      "h": 5500,
+      "page": "page-zh"
+    }
+  ],
+  "launch": {
+    "view": "canvas",
+    "page": "page-zh"
+  }
+}

@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f8f5ef; color: #1c2a2d; font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', 'Yu Gothic', sans-serif; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, p { margin: 0; }
+    img { display: block; }
+    a { color: #1d7a86; text-decoration: none; }
+    a:hover { color: #145a63; }
+  </style>
+</helmet>
+<div style="width: 1440px; background: #f8f5ef;">
+
+  <!-- Header -->
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 28px 80px;">
+    <div style="display: flex; align-items: baseline; gap: 12px;">
+      <span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 26px; letter-spacing: 0.08em;">となり旅</span>
+      <span style="font-size: 13px; letter-spacing: 0.12em; color: #7b8789;">by NW</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 28px;">
+      <a href="#about" style="font-size: 14px; color: #4a5a5d;">となり旅とは</a>
+      <a href="#scenes" style="font-size: 14px; color: #4a5a5d;">台湾の日常</a>
+      <a href="#flow" style="font-size: 14px; color: #4a5a5d;">ご相談の流れ</a>
+      <a href="#entry" style="display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 22px; border-radius: 999px; background: #1d7a86; color: #ffffff; font-size: 14px; font-weight: 700;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-4.97 0-9 3.13-9 7 0 2.4 1.55 4.52 3.93 5.78L6 20l3.9-2.2c.68.13 1.38.2 2.1.2 4.97 0 9-3.13 9-7s-4.03-7-9-7z"></path></svg>
+        LINEで先行登録
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section style="display: grid; grid-template-columns: 560px minmax(0, 1fr); gap: 64px; align-items: center; padding: 40px 0 96px 80px;">
+    <div style="display: flex; flex-direction: column; gap: 32px;">
+      <div style="display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 500; letter-spacing: 0.1em; color: #1d7a86;">
+        <span>日本</span>
+        <svg width="72" height="10" viewBox="0 0 72 10" fill="none"><path d="M1 5c6-5 12-5 18 0s12 5 18 0 12-5 18 0 12 5 16 0" stroke="#1d7a86" stroke-width="1.4" stroke-linecap="round"></path></svg>
+        <span>台湾</span>
+        <span style="margin-left: 8px; padding: 4px 10px; border: 1px solid #c4553a; border-radius: 999px; color: #c4553a; font-size: 12px; letter-spacing: 0.06em;">先行登録受付中</span>
+      </div>
+      <h1 style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 54px; line-height: 1.5; letter-spacing: 0.04em;">海の向こうの、<br>まだ知らない<br>日常へ。</h1>
+      <p style="font-size: 17px; line-height: 2; color: #4a5a5d; text-wrap: pretty;">飛行機で、およそ2〜4時間。はじめての台湾を、観光地のひとつ向こうにある「ふだんの暮らし」から。となり旅は、日本と台湾をつなぐ、NWの新しい旅のかたちです。</p>
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+        <a href="#entry" style="display: flex; align-items: center; gap: 10px; height: 60px; padding: 0 36px; border-radius: 999px; background: #1d7a86; color: #ffffff; font-size: 17px; font-weight: 700; letter-spacing: 0.04em;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-4.97 0-9 3.13-9 7 0 2.4 1.55 4.52 3.93 5.78L6 20l3.9-2.2c.68.13 1.38.2 2.1.2 4.97 0 9-3.13 9-7s-4.03-7-9-7z"></path></svg>
+          LINEで先行登録する
+        </a>
+        <p style="font-size: 13px; color: #7b8789;">登録は無料です。準備が整いしだい、LINEでご案内します。</p>
+      </div>
+    </div>
+    <div style="position: relative;">
+      <img src="sea.webp" alt="台湾の海岸線" style="width: 100%; height: 640px; object-fit: cover; border-radius: 4px 0 0 4px;">
+      <span style="position: absolute; right: 20px; bottom: 16px; font-size: 11px; color: #ffffff; opacity: 0.85;">※写真はイメージです</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" style="display: grid; grid-template-columns: 440px minmax(0, 1fr); gap: 96px; align-items: center; padding: 96px 160px; background: #fffdf9; border-top: 1px solid #e3ddd2; border-bottom: 1px solid #e3ddd2;">
+    <img src="lanterns.webp" alt="提灯の下がる台湾の街角" style="width: 440px; height: 560px; object-fit: cover; border-radius: 4px;">
+    <div style="display: flex; flex-direction: column; gap: 28px;">
+      <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.2em; color: #1d7a86;">となり旅とは</p>
+      <h2 style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 38px; line-height: 1.6; letter-spacing: 0.04em;">観光地の、<br>ひとつ向こうへ。</h2>
+      <p style="font-size: 16px; line-height: 2.1; color: #4a5a5d; text-wrap: pretty;">有名な景色も、もちろんすてきです。でも、旅のあとまで残るのは、朝の食堂の湯気や、路地を抜けるスクーターの音だったりします。</p>
+      <p style="font-size: 16px; line-height: 2.1; color: #4a5a5d; text-wrap: pretty;">となり旅は、台湾の旅行会社との連携を前提に、地元の人の「いつもの台湾」に触れる旅を準備しています。</p>
+    </div>
+  </section>
+
+  <!-- Near / easy / safe -->
+  <section style="display: flex; flex-direction: column; gap: 56px; padding: 112px 160px;">
+    <div style="display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;">
+      <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.2em; color: #1d7a86;">はじめてでも</p>
+      <h2 style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 38px; line-height: 1.6; letter-spacing: 0.04em;">台湾は、思っているより近い国。</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px;">
+      <div style="display: flex; flex-direction: column; gap: 18px; padding: 40px 36px; background: #fffdf9; border: 1px solid #e3ddd2; border-radius: 4px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1d7a86" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 19h19"></path><path d="M3.5 13.5l2.5 1 3.5-1.5L7 8.5l1.5-.6 4.5 3.6 5-2c1.1-.44 2.3.1 2.6 1.1.2.7-.2 1.4-.9 1.7L6.5 17.5l-3-4z"></path></svg>
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 24px; font-weight: 700;">近い</p>
+        <p style="font-size: 15px; line-height: 1.95; color: #4a5a5d;">日本から飛行機でおよそ2〜4時間。時差は1時間だけなので、到着したその日から動けます。</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px; padding: 40px 36px; background: #fffdf9; border: 1px solid #e3ddd2; border-radius: 4px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1d7a86" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"></rect><circle cx="12" cy="10" r="3"></circle><path d="M9 16h6"></path></svg>
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 24px; font-weight: 700;">手軽</p>
+        <p style="font-size: 15px; line-height: 1.95; color: #4a5a5d;">日本のパスポートなら、短期の観光はビザなしで渡航できます。週末に少し足すだけの旅も。※</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px; padding: 40px 36px; background: #fffdf9; border: 1px solid #e3ddd2; border-radius: 4px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1d7a86" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 24px; font-weight: 700;">安心</p>
+        <p style="font-size: 15px; line-height: 1.95; color: #4a5a5d;">ご相談はすべて日本語で。わからないことは、LINEで気軽に聞いてください。</p>
+      </div>
+    </div>
+    <p style="font-size: 12px; line-height: 1.7; color: #7b8789; text-align: center;">※ 入国条件は変わることがあります。渡航前に最新の情報をご確認ください。</p>
+  </section>
+
+  <!-- Scenes -->
+  <section id="scenes" style="display: flex; flex-direction: column; gap: 56px; padding: 112px 80px; background: #e4f0ef;">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; padding: 0 80px;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.2em; color: #1d7a86;">まだ知らない日常</p>
+        <h2 style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 38px; line-height: 1.6; letter-spacing: 0.04em;">ガイドブックの、<br>余白にある台湾。</h2>
+      </div>
+      <p style="max-width: 420px; font-size: 15px; line-height: 2; color: #4a5a5d;">となり旅で出会いたいのは、こんな場面です。行ってみたい場所や、やってみたいことは、先行登録のアンケートでぜひ教えてください。</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <img src="breakfast.webp" alt="台湾の街角の食堂" style="width: 100%; height: 400px; object-fit: cover; border-radius: 4px;">
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 22px; font-weight: 700;">街角の食堂</p>
+        <p style="font-size: 14px; line-height: 1.9; color: #4a5a5d;">湯気の立つ店先で、地元の人と同じ一杯を。</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px; padding-top: 48px;">
+        <img src="market.webp" alt="夜の果物屋" style="width: 100%; height: 400px; object-fit: cover; border-radius: 4px;">
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 22px; font-weight: 700;">夜市</p>
+        <p style="font-size: 14px; line-height: 1.9; color: #4a5a5d;">夜が深くなるほど、にぎやかになる通り。</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <img src="temple.webp" alt="台湾の廟" style="width: 100%; height: 400px; object-fit: cover; border-radius: 4px;">
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 22px; font-weight: 700;">廟</p>
+        <p style="font-size: 14px; line-height: 1.9; color: #4a5a5d;">暮らしのすぐそばにある、祈りの場所。</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px; padding-top: 48px;">
+        <img src="alley.webp" alt="スクーターが走る路地" style="width: 100%; height: 400px; object-fit: cover; border-radius: 4px;">
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 22px; font-weight: 700;">路地</p>
+        <p style="font-size: 14px; line-height: 1.9; color: #4a5a5d;">スクーターが行き交う、住宅街の午後。</p>
+      </div>
+    </div>
+    <p style="padding: 0 80px; font-size: 12px; color: #7b8789;">※ 写真はイメージです。掲載している場面を含む旅行商品は、現在準備中です。</p>
+  </section>
+
+  <!-- For whom -->
+  <section style="display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 80px; padding: 112px 160px;">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.2em; color: #1d7a86;">こんな方に</p>
+      <h2 style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 38px; line-height: 1.6; letter-spacing: 0.04em;">はじめての<br>台湾を、<br>いっしょに。</h2>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <div style="display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; padding: 32px 0; border-top: 1px solid #e3ddd2;">
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 22px; font-weight: 700;">はじめての台湾</p>
+        <p style="font-size: 15px; line-height: 2; color: #4a5a5d;">何から調べればいいかわからなくても大丈夫。行き先や時期の相談から始められます。</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; padding: 32px 0; border-top: 1px solid #e3ddd2;">
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 22px; font-weight: 700;">家族での旅行</p>
+        <p style="font-size: 15px; line-height: 2; color: #4a5a5d;">お子さまから親世代まで、みんなが無理なく楽しめる行程をいっしょに考えます。</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; padding: 32px 0; border-top: 1px solid #e3ddd2; border-bottom: 1px solid #e3ddd2;">
+        <p style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 22px; font-weight: 700;">シニアの方</p>
+        <p style="font-size: 15px; line-height: 2; color: #4a5a5d;">ゆったりしたペースで、移動の負担が少ない旅を。気になることは事前に何でもご相談ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flow -->
+  <section id="flow" style="display: flex; flex-direction: column; gap: 56px; padding: 112px 160px; background: #fffdf9; border-top: 1px solid #e3ddd2;">
+    <div style="display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;">
+      <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.2em; color: #1d7a86;">ご相談の流れ</p>
+      <h2 style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 38px; line-height: 1.6; letter-spacing: 0.04em;">LINEから、3ステップ。</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 48px; font-weight: 500; color: #1d7a86; line-height: 1;">01</span>
+        <p style="font-size: 20px; font-weight: 700;">LINEで友だち追加</p>
+        <p style="font-size: 15px; line-height: 1.95; color: #4a5a5d;">下のボタンから、NWの公式LINEを友だち追加してください。</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 48px; font-weight: 500; color: #1d7a86; line-height: 1;">02</span>
+        <p style="font-size: 20px; font-weight: 700;">かんたんなアンケートに回答</p>
+        <p style="font-size: 15px; line-height: 1.95; color: #4a5a5d;">行きたい時期や、台湾でやってみたいことを教えてください。1分ほどで終わります。</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-size: 48px; font-weight: 500; color: #1d7a86; line-height: 1;">03</span>
+        <p style="font-size: 20px; font-weight: 700;">準備が整いしだいご案内</p>
+        <p style="font-size: 15px; line-height: 1.95; color: #4a5a5d;">旅の準備ができたら、LINEでお知らせします。個別のご相談もLINEで受け付けます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entry -->
+  <section id="entry" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 32px; padding: 120px 160px; background: #145a63; color: #ffffff; text-align: center;">
+    <svg width="96" height="14" viewBox="0 0 72 10" fill="none"><path d="M1 5c6-5 12-5 18 0s12 5 18 0 12-5 18 0 12 5 16 0" stroke="#a9d3d3" stroke-width="1.2" stroke-linecap="round"></path></svg>
+    <h2 style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 42px; line-height: 1.6; letter-spacing: 0.04em;">まずは、となりの国の話から。</h2>
+    <p style="max-width: 620px; font-size: 16px; line-height: 2; color: #d5e8e8;">先行登録いただいた方には、旅の準備が整いしだい、いちばん最初にご案内をお届けします。</p>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+      <a href="[LINE友だち追加URL]" style="display: flex; align-items: center; gap: 10px; height: 64px; padding: 0 44px; border-radius: 999px; background: #ffffff; color: #145a63; font-size: 18px; font-weight: 700; letter-spacing: 0.04em;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-4.97 0-9 3.13-9 7 0 2.4 1.55 4.52 3.93 5.78L6 20l3.9-2.2c.68.13 1.38.2 2.1.2 4.97 0 9-3.13 9-7s-4.03-7-9-7z"></path></svg>
+        LINEで先行登録する
+      </a>
+      <a href="[登録フォームURL]" style="font-size: 14px; color: #d5e8e8; text-decoration: underline; text-underline-offset: 4px;">LINEを使わない方は、メールで登録</a>
+    </div>
+    <p style="max-width: 680px; font-size: 12px; line-height: 1.8; color: #a9d3d3;">登録は無料です。現在、旅行商品の販売・予約の受付は行っていません。実際の旅行の手配は、提携する旅行会社が行う予定です。</p>
+  </section>
+
+  <!-- Footer -->
+  <footer style="display: flex; flex-direction: column; gap: 32px; padding: 56px 80px 48px; background: #f8f5ef;">
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 40px;">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: baseline; gap: 12px;">
+          <span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 700; font-size: 22px; letter-spacing: 0.08em;">となり旅</span>
+          <span style="font-size: 12px; letter-spacing: 0.12em; color: #7b8789;">by NW</span>
+        </div>
+        <p style="font-size: 13px; line-height: 1.8; color: #4a5a5d;">運営：[会社名]<br>[所在地]<br>[旅行業登録番号]</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 24px;">
+        <a href="[Instagram URL]" style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #4a5a5d;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6"></circle></svg>
+          Instagram
+        </a>
+        <a href="[プライバシーポリシーURL]" style="font-size: 14px; color: #4a5a5d;">プライバシーポリシー</a>
+        <a href="[会社概要URL]" style="font-size: 14px; color: #4a5a5d;">会社概要</a>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; gap: 40px; padding-top: 24px; border-top: 1px solid #e3ddd2; font-size: 11px; line-height: 1.7; color: #7b8789;">
+      <p>Photos: Sam Chang, Q, Roméo A., Sheng Jie Choy, Lisanto 李奕良, Yamato Yamaguchi on Unsplash</p>
+      <p>© [会社名]</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
