@@ -243,3 +243,14 @@ svg { flex-shrink: 0; }
   .footer__links a { font-size: 14px; }
   .footer__bottom { flex-direction: row; justify-content: space-between; gap: 40px; font-size: 11px; }
 }
+
+/* パソコンで見ているときだけ、LINE の QR コードをボタンの横に出す（スマホでは自分の画面の QR を読み取れないため出さない） */
+.entry__or, .entry__qr { display: none; }
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  .entry__actions { flex-direction: row; justify-content: center; align-items: center; gap: 28px; }
+  .entry__or { display: block; font-size: 14px; color: var(--sea-soft); }
+  .entry__qr { display: flex; align-items: center; gap: 16px; padding: 12px 22px 12px 12px; background: #fff; border-radius: 12px; }
+  .entry__qr img { display: block; width: 120px; height: 120px; }
+  .entry__qr p { margin: 0; font-size: 14px; line-height: 1.7; color: var(--ink); text-align: left; white-space: nowrap; }
+  .entry__actions .btn--lg { flex-shrink: 0; white-space: nowrap; }
+}
